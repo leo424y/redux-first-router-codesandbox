@@ -2,6 +2,8 @@ export default (state = 'RFR Demo', action = {}) => {
   switch (action.type) {
     case 'HOME':
       return 'RFR Demo'
+    case 'NOTE':
+      return 'NOTE!'      
     case 'LIST':
       return `RFR: ${capitalize(action.payload.category)}`
     case 'VIDEO':

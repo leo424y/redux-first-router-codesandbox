@@ -12,6 +12,9 @@ export default (state = 'next', action = {}) => {
   if (type === 'HOME') {
     return 'back'
   }
+  if (type === 'NOTE') {
+    return 'back'
+  }
   else if (type === 'LIST' && prevType === 'HOME') {
     return 'next'
   }

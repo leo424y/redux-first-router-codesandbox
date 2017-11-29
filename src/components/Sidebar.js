@@ -6,9 +6,12 @@ import '../css/Sidebar.css'
 
 const Sidebar = ({ onClick, path }) =>
   <div className='sidebar'>
-    <h2>SEO-FRIENDLY LINKS</h2>
 
     <NavLink activeClassName='active' exact to='/'>HOME</NavLink>
+
+    <NavLink activeClassName='active' to='/note'>
+      Note
+    </NavLink>
 
     <NavLink activeClassName='active' to='/list/db-graphql'>
       DB & GRAPHQL
@@ -22,8 +25,7 @@ const Sidebar = ({ onClick, path }) =>
       FP
     </NavLink>
 
-    <div style={{ height: 20 }} />
-    <h2>EVENT HANDLERS</h2>
+    <div style={{ height: 30 }} />
 
     <span className={active(path, '/')} onClick={() => onClick('HOME')}>
       HOME
@@ -52,9 +54,9 @@ const Sidebar = ({ onClick, path }) =>
 
     <div style={{height: 14 }} />
 
-    <Link to='https://github.com/faceyspacey/redux-first-router' target='_blank' style={{padding: 7}}>
+    <Link to='https://github.com/leo424y' target='_blank' style={{padding: 7}}>
       <GithubLogo />
-      {' RFR on Github'}
+      {' Me on Github'}
     </Link>
 
     <div style={{height: 5 }} />

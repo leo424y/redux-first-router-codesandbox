@@ -11,6 +11,10 @@ export const goHome = () => ({
   type: 'HOME'
 })
 
+export const goNote = () => ({
+  type: 'NOTE'
+})
+
 export const goToAdmin = () => ({
   type: 'ADMIN'
 })

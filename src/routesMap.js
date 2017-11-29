@@ -3,6 +3,7 @@ import fetch from './api'
 
 const routesMap = {
   HOME: '/',
+  NOTE: '/note',
   LIST: {
     path: '/list/:category',
     thunk: async (dispatch, getState) => {
@@ -50,7 +51,7 @@ const routesMap = {
   },
   LOGIN: '/login',
   ADMIN: {
-    path: '/admin', // TRY: visit this path ADMIN
+    path: '/login', // TRY: visit this path ADMIN
     role: 'admin'   // + set the user's role to admin
   }
 }
